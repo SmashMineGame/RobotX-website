@@ -1,0 +1,29 @@
+:root {
+  --primary: #0B5A81;
+  --secondary: #D94704;
+  --dark: #181818;
+  --med: #D9E1E5;
+  --light: #FFFFFF;
+}
+
+body, html {
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
+
+#nav {
+  background-color: var(--dark);
+}
+
+#nav .brand {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 1.5em;
+  float: left;
+}
+
+#nav .links {}
