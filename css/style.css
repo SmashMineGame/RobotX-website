@@ -15,15 +15,64 @@ body, html {
   width: 80%;
 }
 
-#nav {
-  background-color: var(--dark);
-}
-
-#nav .brand {
+header {
+  background: var(--secondary);
   color: var(--light);
-  text-decoration: none;
-  font-size: 1.5em;
-  float: left;
+  padding: 1em 0;
+  position: relative;
 }
 
-#nav .links {}
+header::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header .brand {
+  float: left;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+header nav {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background: var(--dark);
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header nav li {
+  border-bottom: 1px solid #575766;
+}
+
+header nav li:last-child {
+  border-bottom: none;
+}
+
+header nav a {
+  color: var(--light);
+  display: block;
+  padding: 2em 4em 2em 1.5em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header nav a:hover, header nav a:focus {
+  background: var(--med);
+  color: var(--dark);
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  cursor: pointer;
+}
