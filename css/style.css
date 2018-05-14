@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+
+
+:root {
+  --primary: #0B5A81;
+  --secondary: #D94704;
+  --dark: #181818;
+  --med: #D9E1E5;
+  --light: #FFFFFF;
+  
+  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+body, html {
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  width: 80%;
+}
