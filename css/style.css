@@ -1,16 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
-
-
-
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 :root {
   --primary: #0B5A81;
   --secondary: #D94704;
   --dark: #181818;
   --med: #D9E1E5;
   --light: #FFFFFF;
-  
-  font-family: 'Lato', sans-serif;
-  font-family: 'Raleway', sans-serif;
+  --title: 'Roboto Mono';
+  --content: 'PT Sans';
 }
 
 body, html {
@@ -20,4 +17,54 @@ body, html {
 .container {
   margin: auto;
   width: 80%;
+}
+
+.title{
+  font-family: var(--title);
+}
+
+header {
+  background: var(--dark);
+}
+
+.brand{
+  font-family:var(--title);
+  color:var(--light);
+  display: inline-block;
+  padding: 14px 0px;
+}
+
+#navbar {
+  display: inline-block;
+  float: right;
+  height:100%;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navbar li {
+  height:100%;
+  float: right;
+}
+
+#navbar li a {
+  font-family:var(--title);
+  display: block;
+  color: var(--light);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  background-color: black;
+}
+
+section{
+  font-family: var(--content);
 }
