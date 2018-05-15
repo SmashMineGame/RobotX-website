@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Mono:400,700');
 :root {
   --primary: #0B5A81;
   --secondary: #D94704;
@@ -12,6 +11,9 @@
 
 body, html {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .container {
@@ -19,25 +21,33 @@ body, html {
   width: 80%;
 }
 
-.title{
+.title {
   font-family: var(--title);
 }
+
+section {
+  font-family: var(--content);
+}
+
+/* navbar */
 
 header {
   background: var(--dark);
 }
 
-.brand{
-  font-family:var(--title);
-  color:var(--light);
+.brand {
+  font-family: var(--title);
+  color: var(--light);
   display: inline-block;
+  font-size: 1.25em;
   padding: 14px 0px;
+  font-weight: 700;
 }
 
 #navbar {
-  display: inline-block;
+  s display: inline-block;
   float: right;
-  height:100%;
+  height: 100%;
 }
 
 #navbar ul {
@@ -48,16 +58,16 @@ header {
 }
 
 #navbar li {
-  height:100%;
+  height: 100%;
   float: right;
 }
 
 #navbar li a {
-  font-family:var(--title);
+  font-family: var(--title);
   display: block;
   color: var(--light);
   text-align: center;
-  padding: 14px 16px;
+  padding: 16px;
   text-decoration: none;
 }
 
@@ -65,6 +75,15 @@ header {
   background-color: black;
 }
 
-section{
-  font-family: var(--content);
+/* home */
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg");
+  background-size: cover;
+}
+
+#home h1 {
+  margin: 0;
 }
