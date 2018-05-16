@@ -9,10 +9,6 @@
   --content: 'PT Sans';
 }
 
-*{
-  transition: all ease-in-out 1s;
-}
-
 body, html {
   margin: 0;
   padding: 0;
@@ -76,7 +72,7 @@ header {
 
 #navbar li {
   height: 100%;
-  float: right;
+  float: left;
 }
 
 #navbar li a {
@@ -89,7 +85,7 @@ header {
 }
 
 #navbar li a:hover {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 /* home */
@@ -108,33 +104,78 @@ header {
   position: absolute;
   right: 50%;
   top: 50%;
-  transform: translate(50%,-50%);
+  transform: translate(50%, -50%);
 }
 
-/* newsletter sign-up */
+/* newsletter sign up */
 
 .signup {
-  background: var(--med);
+  padding: 15px 0;
+  background: var(--dark);
 }
 
 .signup .title {
   padding: 7px 0;
+  color: var(--light);
 }
 
 .signup .mail-list {
   width: 100%;
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 
 .signup input {
-  width: 25%;
+  width: 30%;
   height: 30px;
   margin-right: 7px;
+  padding-left: 7px;
   border: none;
-  background-color: var(--dark);
+  background-color: var(--light);
+  font-size: 0.85em;
+}
+
+.signup button {
+  border: none;
+  background: var(--primary);
+  color: var(--light);
+  font-weight: bold;
 }
 
 .signup input, .signup button {
   margin-bottom: 10px;
+}
+
+/* content */
+
+#content {
+  background: url("https://picsum.photos/1000/500?blur");
+  background-size: cover;
+  color: var(--light);
+}
+
+/* about us */
+
+#about {
+  width: 100%;
+  padding: 20px 0 30px 0;
+  margin-bottom: 30px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* misson */
+
+#mission {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+/* seasons */
+
+#seasons .robot {
+  width: 100px;
+  height: 100px;
+  margin-right: 4%;
+  background: var(--primary);
+  display: inline-block;
 }
