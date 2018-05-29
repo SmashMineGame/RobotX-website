@@ -16,7 +16,7 @@ body, html {
   width: 100%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, table, tr, th {
   margin: 0;
   padding: 0;
 }
@@ -193,4 +193,27 @@ header {
 
 #seasons .row .robot:last-child {
   margin-right: 0;
+}
+
+/* robots > description */
+
+#description {
+  margin-top: 74px;
+}
+
+#description p {
+  vertical-align: top;
+  margin-top: 30px;
+  margin-left: 150px;
+  width: 700px;
+}
+
+#description p, #description img {
+  display: inline-block;
+}
+
+/* robots > stats */
+
+table, tr, th {
+  border: 1px solid black;
 }
