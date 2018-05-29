@@ -23,7 +23,7 @@ h1, h2, h3 {
 
 .container {
   margin: auto;
-  width: 80%;
+  width: 1300px;
 }
 
 .title {
@@ -76,6 +76,7 @@ header {
 }
 
 #navbar li a {
+  transition: background 500ms;
   font-family: var(--title);
   display: block;
   color: var(--light);
@@ -172,10 +173,24 @@ header {
 
 /* seasons */
 
-#seasons .robot {
-  width: 100px;
-  height: 100px;
-  margin-right: 4%;
-  background: var(--primary);
+#seasons {
+  margin-top: 20px;
+}
+
+#seasons .row .robot {
+  width: 240px;
+  height: 240px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: var(--med);
   display: inline-block;
+  transition: background 1s;
+}
+
+#seasons .row .robot:hover {
+  background: var(--secondary);
+}
+
+#seasons .row .robot:last-child {
+  margin-right: 0;
 }
